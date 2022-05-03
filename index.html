@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <title>StarBucks Landing Page</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <div id="header">
+        <a href="" class="logo" >
+            <img src="./assets/images/logo.png" alt="">
+        </a>
+        <nav class="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">What's new</a></li>
+            <li><a href="">Contact</a></li>
+        </nav>
+    </div>
+    <div id="wp-content">
+        <div class="content">
+            <p>It's not just Coffee</p>
+            <p>It's <span>Starbucks</span></p>
+            <p1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit autem totam neque voluptatibus. Cum laboriosam veniam quisquam alias libero ea asperiores, exercitationem unde reiciendis sit, aperiam quaerat sapiente sunt esse pariatur quasi? Commodi adipisci quia iure, excepturi esse beatae vel!</p1> <br>
+            <a href="" class="more text-uppercase">Learn more</a>
+        </div>
+        <div class="sidebar">
+            <img src="./assets/images/pic1.png" class="starbucks" alt="">
+            <div class="social">
+                <li><a href="https://www.facebook.com/" target="blank"><img src="./assets/images/facebook.png" alt=""></a></li>
+                <li> <a href="https://www.instagram.com/" target="blank"><img src="./assets/images/instagram.png" alt=""></a></li>
+                <li><a href="https://twitter.com/?lang=vi" target="blank"><img src="./assets/images/twitter.png" alt=""></a></li>     
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <ul class="thumb">
+            <li><img src="./assets/images/thumb1.png" onclick="imgSlider('./assets/images/pic1.png');changeCircleColor('#017143')" alt=""></li>
+            <li><img src="./assets/images/thumb2.png" onclick="imgSlider('./assets/images/pic3.png');changeCircleColor('#eb7495')" alt=""></li>
+            <li><img src="./assets/images/thumb3.png" onclick="imgSlider('./assets/images/pic2.png');changeCircleColor('#d752b1')" alt=""></li>
+        </ul>
+    </div>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle')
+            circle.style.background = color;
+        }
+    </script>
+    
+</body>
+</html>
